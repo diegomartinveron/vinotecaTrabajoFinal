@@ -1,0 +1,324 @@
+/* importo las fuentes que necesito */
+
+@font-face {
+  /* aca pongo el nombre  que quiero utilizar la fuente */
+
+  font-family: "JockeyOne";
+
+  src: url(../font/JockeyOne-Regular.ttf);
+}
+
+@font-face {
+  /* aca pongo el nombre  que quiero utilizar la fuente */
+
+  font-family: "Jomhuria";
+
+  src: url(../font/Jomhuria-Regular.ttf);
+}
+
+/* Primero realizo el Formato Unbioversal */
+
+/* font-family utilizar para los titulos una y para el resto otra */
+
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: JockeyOne, Jomhuria, sans-serif;
+
+  /* line-height: 1.6; defino la alturaa de las cajas de linea */
+}
+
+/* Fin de ID */
+
+/* etiquetas */
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+body {
+  background: #722f37;
+  color: #ffffff;
+  background-image: url(../img/Fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+  display: flex;
+
+  flex-flow: column;
+}
+
+main {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
+
+span {
+  color: #722f37;
+}
+
+h1 {
+  font-size: 128px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+form {
+  display: flex;
+
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+
+  margin-bottom: 1rem;
+
+  border: 1px solid #ccc;
+
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #722f37;
+
+  color: white;
+
+  padding: 0.5rem;
+
+  border: none;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+/* fin de las etiquetas c */
+
+/* Comienza las Class */
+
+.rubro {
+  top: 1px;
+
+  margin: 5px;
+
+  padding: 1px;
+}
+
+.marca {
+  padding: 2px;
+  position: relative;
+  bottom: 55px;
+}
+
+.h2_Inicio {
+  font-size: 3rem;
+}
+.p_eslogan {
+  font-family: Jomhuria;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+.p_bienvenido {
+  font-size: 1.2rem;
+  text-align: start;
+}
+
+.navegadorPrincipal_ul,
+.navegadorPrincipal_li,
+.navegadorFooter_ul,
+.navegadorFooter_li {
+  list-style: none;
+
+  display: flex;
+
+  color: #ffffff;
+
+  padding: 1px 12px 2px;
+}
+
+.navegadorPrincipal_li,
+.navegadorFooter_li {
+  border-left: 3px solid #ffffff;
+}
+
+/* agregue display block para que la imagen me qude en la misma fila */
+.imagenUbicacion {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 12px;
+}
+
+/* galeria de imagenes nuestros clientes */
+
+.main_nuestroClientes {
+  width: 100%;
+}
+
+.main_galeria {
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.main_nosotros {
+  display: flex;
+}
+
+.galeria,
+.ventavino_article {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 1rem;
+
+  justify-content: center;
+}
+
+.ventavino_article {
+  flex-wrap: inherit;
+}
+
+.foto {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  flex: 1 1 calc(33.333% - 1rem);
+
+  max-width: calc(33.333% - 1rem);
+}
+
+.texto.p_nostros {
+  font-size: 30px;
+}
+
+/* combinacion de class en galeria de imagen */
+
+/* (intento poner un texto encima de la imagen) */
+
+.foto .texto {
+  position: absolute;
+
+  bottom: 0;
+
+  width: 100%;
+
+  padding: 0.5rem;
+
+  background: rgba(0, 0, 0, 0.6);
+
+  color: white;
+
+  text-align: center;
+
+  transition: background 0.3s ease;
+}
+
+.foto .texto p {
+  margin: 0;
+}
+
+.foto .texto span {
+  font-weight: bold;
+}
+
+/* fin de combinación de class en galeria */
+
+/* fin de la galeria */
+
+/* nosotro */
+
+.h2_ProductoClientesNosotros {
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.ventaCantidad {
+  width: 250px;
+
+  text-align: start;
+}
+
+.ventasvinosPrecios {
+  font-size: 2rem;
+}
+
+/* galeria de nosotros */
+.card-img-top {
+  height: 400px; /* Ajusta esta altura según tus necesidades */
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+}
+
+/* fomulario de contacto class */
+
+.formulariosContactos {
+  border-radius: 8px;
+  width: 50%;
+}
+
+.enviado {
+  display: none;
+
+  color: #722f37;
+
+  font-weight: bold;
+
+  margin-top: 1rem;
+}
+
+/* fin de formulario de contacto */
+
+/* selecciones de hover; cuando se posiciona el mouse e */
+
+input[type="submit"]:hover {
+  background-color: #4caf50;
+}
+
+/* fin de hover */

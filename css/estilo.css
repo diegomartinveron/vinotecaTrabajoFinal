@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "JockeyOne";
+  src: url(../font/JockeyOne-Regular.ttf);
+}
+@font-face {
+  font-family: "Jomhuria";
+  src: url(../font/Jomhuria-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: JockeyOne, Jomhuria, sans-serif;
+}
+* ::-moz-selection {
+  background-color: black;
+  color: #722f37;
+}
+* ::selection {
+  background-color: black;
+  color: #722f37;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: #722f37;
+  color: white;
+  background-image: url(../img/Fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-flow: column;
+}
+header .container-Encabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+header .rubro {
+  top: 1px;
+  margin: 5px;
+  padding: 1px;
+}
+header .rubro h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+header .marca {
+  padding: 2px;
+  position: relative;
+  bottom: 25px;
+}
+header .marca h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding-left: 40px;
+}
+header .marca span {
+  color: #722f37;
+}
+header .navegadorPrincipal_ul {
+  display: flex;
+}
+header .navegadorPrincipal_ul .navegadorPrincipal_li {
+  list-style: none;
+  border-left: 3px solid #ffffff;
+  color: white;
+  padding: 1px 12px 2px;
+}
+header .navegadorPrincipal_ul .navegadorPrincipal_li .imagenUbicacion {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 12px;
+}
+header .navegadorPrincipal_ul .navegadorPrincipal_li a span {
+  color: #722f37;
+}
+
+.navegadorFooter_ul,
+.navegadorFooter_li {
+  list-style: none;
+  display: flex;
+  color: #ffffff;
+  padding: 1px 12px 2px;
+}
+
+.navegadorFooter_li {
+  border-left: 3px solid #ffffff;
+}
+
+main {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+main .h2_Inicio {
+  font-size: 3rem;
+}
+main .p_slogan {
+  font-family: Jomhuria;
+  font-size: 2rem;
+  padding: 1rem;
+}
+main .p_bienvenido {
+  font-size: 1.2rem;
+  text-align: start;
+}/*# sourceMappingURL=estilo.css.map */

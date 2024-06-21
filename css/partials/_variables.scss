@@ -1,0 +1,17 @@
+// Mis fuentes en Vinoteca 1 Copa +
+@font-face {
+   
+    font-family: "JockeyOne";
+  
+    src: url(../font/JockeyOne-Regular.ttf);
+  }
+  @font-face {
+   
+  
+    font-family: "Jomhuria";
+  
+    src: url(../font/Jomhuria-Regular.ttf);
+  }
+//  variable de las fuentes
+  $fuentesVinoteca : JockeyOne, Jomhuria, sans-serif;
+  $colorVino: #722f37;
