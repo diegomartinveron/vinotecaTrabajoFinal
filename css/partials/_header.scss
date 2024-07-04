@@ -1,67 +1,59 @@
 header {
+    display: flex;
+    flex-flow: column;
+
+
+    .container-Encabezado {
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
+        align-items: flex-start; // Alineo los elementos al inicio del contenedor
+        gap: 0; // Elimino espacio entre los elementos
+    }
 
+    .rubro {
+        top: 1px;
+        margin: 5px;
+        padding: 1px;
 
-        .container-Encabezado {
-            display: flex;
-            flex-direction: column; 
-            align-items: flex-start; // Alineo los elementos al inicio del contenedor
-            gap: 0; // Elimino espacio entre los elementos
+        h1 {
+            font-size: 3rem;
+            margin: 0;
         }
-        
-        .rubro {
-            top: 1px;
-            margin: 5px;
-            padding: 1px;
-    
-            h1 {
-                font-size: 3rem;
-                margin: 0;
-            }
-        }
+    }
 
-        .marca {
-            padding: 2px;
-            position: relative;
-            bottom: 25px;
-        
-            h2 {
-                font-size: 1.5rem;
-                margin: 0;
-                padding-left: 40px; // Ajusto el valor para mover el h2 a la derecha
-            }
-        
-            span{
-                color: $colorVino;
-            }
-        }
-        
-        
+    .marca {
+        padding: 2px;
+        position: relative;
+        bottom: 25px;
 
-        .navegadorPrincipal_ul{
-            display: flex;
-            
-            .navegadorPrincipal_li{
+        h2 {
+            font-size: 1.5rem;
+            margin: 0;
+            padding-left: 40px; // Ajusto el valor para mover el h2 a la derecha
+        }
+    }
+
+    .navegadorPrincipal_ul {
+        display: flex;
+
+        .navegadorPrincipal_li {
             list-style: none;
             border-left: 3px solid #ffffff;
             color: white;
             padding: 1px 12px 2px;
-        
-                    .imagenUbicacion{
-                        width: 30px;
-                        height: 30px;
-                        display: inline-block;
-                        border-radius: 12px;
-                    }
-                    a{
-                        span{
-                            color:$colorVino;
-                        }
-                    }
+
+            .imagenUbicacion {
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                border-radius: 12px;
+            }
+
+            a {
+                span {
+                    color: $colorVino;
                 }
+            }
         }
+    }
 }
-
-
-

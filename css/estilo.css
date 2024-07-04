@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "JockeyOne";
   src: url(../font/JockeyOne-Regular.ttf);
@@ -24,6 +25,10 @@
 a {
   text-decoration: none;
   color: inherit;
+}
+
+span {
+  color: #722f37;
 }
 
 body {
@@ -65,9 +70,6 @@ header .marca h2 {
   margin: 0;
   padding-left: 40px;
 }
-header .marca span {
-  color: #722f37;
-}
 header .navegadorPrincipal_ul {
   display: flex;
 }
@@ -85,6 +87,10 @@ header .navegadorPrincipal_ul .navegadorPrincipal_li .imagenUbicacion {
 }
 header .navegadorPrincipal_ul .navegadorPrincipal_li a span {
   color: #722f37;
+}
+
+.parrafoFooter {
+  text-align: center;
 }
 
 .navegadorFooter_ul,
@@ -116,4 +122,123 @@ main .p_slogan {
 main .p_bienvenido {
   font-size: 1.2rem;
   text-align: start;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.galeria .foto {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 calc(33.333% - 1rem);
+  max-width: calc(33.333% - 1rem);
+}
+.galeria .foto .card-text {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+.galeria .foto p {
+  font-size: 0.8rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.form-container h2 {
+  margin-bottom: 20px;
+}
+.form-container .form-group {
+  width: 60%;
+  margin: 0 auto;
+}
+.form-container .form-group .form-control {
+  width: 100%;
+  margin: 10px; /* Asegura que los input y textarea ocupen el 100% del form-group */
+}
+.form-container .btn {
+  display: block;
+  width: 25%;
+  margin: 20px auto 0;
+}
+
+.product-card {
+  padding: 10px;
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-price {
+  color: green;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.quantity-control {
+  margin: 10px 0;
+}
+
+.quantity-control button {
+  background-color: #722f37;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+.quantity-control input {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #722f37;
+  margin: 0 5px;
+  font-size: 1rem;
+}
+
+.btn-carrito {
+  background-color: #722f37;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+img {
+  width: 100%; /* Ajusta el ancho de la imagen al ancho del form-group */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-height: 300px; /* Altura máxima para todas las imágenes */
+  -o-object-fit: cover;
+     object-fit: cover; /* Cubre el área asignada sin distorsionar la imagen */
 }/*# sourceMappingURL=estilo.css.map */

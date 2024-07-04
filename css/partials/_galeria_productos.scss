@@ -1,0 +1,7 @@
+
+img {
+    width: 100%; /* Ajusta el ancho de la imagen al ancho del form-group */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 300px; /* Altura máxima para todas las imágenes */
+    object-fit: cover; /* Cubre el área asignada sin distorsionar la imagen */
+}

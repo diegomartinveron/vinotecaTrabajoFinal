@@ -190,15 +190,6 @@ input[type="submit"] {
 
 /* galeria de imagenes nuestros clientes */
 
-.main_nuestroClientes {
-  width: 100%;
-}
-
-.main_galeria {
-  padding: 1rem;
-  border-radius: 10px;
-}
-
 .main_nosotros {
   display: flex;
 }
@@ -235,7 +226,7 @@ input[type="submit"] {
 }
 
 .texto.p_nostros {
-  font-size: 30px;
+  font-size: 10rem;
 }
 
 /* combinacion de class en galeria de imagen */
@@ -246,6 +237,7 @@ input[type="submit"] {
   position: absolute;
 
   bottom: 0;
+ 
 
   width: 100%;
 
@@ -317,7 +309,7 @@ input[type="submit"] {
 
 /* selecciones de hover; cuando se posiciona el mouse e */
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
   background-color: #4caf50;
 }
 

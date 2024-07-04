@@ -5,8 +5,7 @@
   
     src: url(../font/JockeyOne-Regular.ttf);
   }
-  @font-face {
-   
+  @font-face {  
   
     font-family: "Jomhuria";
   
@@ -15,3 +14,4 @@
 //  variable de las fuentes
   $fuentesVinoteca : JockeyOne, Jomhuria, sans-serif;
   $colorVino: #722f37;
+  $fondoNegro:rgba(0, 0, 0, 0.8);
