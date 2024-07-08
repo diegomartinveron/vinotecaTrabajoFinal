@@ -104,6 +104,13 @@ header .navegadorPrincipal_ul .navegadorPrincipal_li a span {
 .navegadorFooter_li {
   border-left: 3px solid #ffffff;
 }
+.navegadorFooter_li img {
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 1px;
+  width: 24px; /* Ajusta el tamaño del icono según sea necesario */
+  height: 24px; /* Ajusta el tamaño del icono según sea necesario */
+}
 
 main {
   padding: 2rem;
@@ -233,12 +240,22 @@ img {
   padding: 10px 20px;
   font-size: 1rem;
   border-radius: 5px;
+  transition: 0.2s;
+}
+.btn-carrito:hover {
+  border: 1px solid green;
+  color: green;
+  background-color: white;
 }
 
 img {
-  width: 100%; /* Ajusta el ancho de la imagen al ancho del form-group */
-  height: auto; /* Mantiene la proporción de la imagen */
+  width: 100%; /* Ajuste el ancho de la imagen al ancho del contenedor */
+  height: auto; /* Mantengo la proporción de la imagen */
   max-height: 300px; /* Altura máxima para todas las imágenes */
   -o-object-fit: cover;
      object-fit: cover; /* Cubre el área asignada sin distorsionar la imagen */
+  transition: transform 0.3s ease; /* Transición suave para la transformación */
+}
+img:hover {
+  transform: scale(1.1); /* Escala la imagen al 110% en hover */
 }/*# sourceMappingURL=estilo.css.map */

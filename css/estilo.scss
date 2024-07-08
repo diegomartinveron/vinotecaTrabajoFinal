@@ -1,4 +1,3 @@
-
 @import "./partials/variables";
 @import "./partials/reset";
 @import "./partials/body";
@@ -6,20 +5,19 @@
 @import "./partials/footer";
 
 // estilos de index.html
-@import"./partials/main_inidex";
-
+@import "./partials/main_inidex";
 
 // estilos de cliente.html
-@import"./partials/galeria_clientes";
+@import "./partials/galeria_clientes";
 
 // estilo formulario.html
 
-@import"./partials/_formulario_contacto";
+@import "./partials/_formulario_contacto";
 
 // estilo de carrito
 
-@import"./partials/galeria_carrito";
+@import "./partials/galeria_carrito";
 
-// estilo hacetupedido.html
+// estilo imagenes.html
 
-@import "./partials/galeria_productos";
+@import "./partials/imagenes";
