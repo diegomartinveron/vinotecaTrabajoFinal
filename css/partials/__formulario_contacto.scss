@@ -1,0 +1,29 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+.form-group{
+    width: 60%;
+    margin: 0 auto;
+    .form-control {
+        width: 100%;
+        margin: 10px; /* Asegura que los input y textarea ocupen el 100% del form-group */
+    }
+   
+    }
+    .btn {
+        display: block;
+        width: 25%;
+        margin: 20px auto 0;
+    }
+}
+  
+

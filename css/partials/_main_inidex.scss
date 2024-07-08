@@ -1,0 +1,21 @@
+main{
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+
+    .h2_Inicio{
+        font-size: 3rem;
+    }
+    
+    .p_slogan{
+        font-family: Jomhuria;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .p_bienvenido {
+        font-size: 1.2rem;
+        text-align: start;
+      }
+}

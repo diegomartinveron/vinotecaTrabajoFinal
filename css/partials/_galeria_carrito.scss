@@ -1,0 +1,51 @@
+.product-card {
+  padding: 10px;
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.product-price {
+  color: green;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+.quantity-control {
+  margin: 10px 0;
+}
+.quantity-control button {
+  background-color: $colorVino;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+.quantity-control input {
+  width: 40px;
+  text-align: center;
+  border: 1px solid $colorVino;
+  margin: 0 5px;
+  font-size: 1rem;
+}
+.btn-carrito {
+  background-color: $colorVino;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: 0.2s;
+  &:hover {
+    border: 1px solid green;
+    color: green;
+    background-color: white;
+  }
+}

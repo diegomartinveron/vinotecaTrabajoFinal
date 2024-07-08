@@ -1,0 +1,23 @@
+@import "./partials/variables";
+@import "./partials/reset";
+@import "./partials/body";
+@import "./partials/header";
+@import "./partials/footer";
+
+// estilos de index.html
+@import "./partials/main_inidex";
+
+// estilos de cliente.html
+@import "./partials/galeria_clientes";
+
+// estilo formulario.html
+
+@import "./partials/_formulario_contacto";
+
+// estilo de carrito
+
+@import "./partials/galeria_carrito";
+
+// estilo imagenes.html
+
+@import "./partials/imagenes";
