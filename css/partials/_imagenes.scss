@@ -1,0 +1,11 @@
+img {
+  width: 100%; /* Ajuste el ancho de la imagen al ancho del contenedor */
+  height: auto; /* Mantengo la proporción de la imagen */
+  max-height: 300px; /* Altura máxima para todas las imágenes */
+  object-fit: cover; /* Cubre el área asignada sin distorsionar la imagen */
+  transition: transform 0.3s ease; /* Transición suave para la transformación */
+
+  &:hover {
+    transform: scale(1.1); /* Escala la imagen al 110% en hover */
+  }
+}
