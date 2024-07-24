@@ -19,66 +19,92 @@
 
 <body>
   <div class="container">
-    <header>
+  <header>
       <div class="container-Encabezado">
-        <div class="rubro">
-          <h1>Vinoteca</h1>
-        </div>
-        <div class="marca">
-          <h2><span>Una</span> Copa Más</h2>
-        </div>
+          <div class="rubro text-center text-md-left">
+              <h1>Vinoteca</h1>
+          </div>
+          <div class="marca text-center text-md-right">
+              <h2><span>Una</span> Copa Más</h2>
+          </div>
+          <nav class="d-flex align-items-center justify-content-between">
+              <ul class="navegadorPrincipal_ul d-flex list-unstyled mb-0">
+                  <li class="navegadorPrincipal_li d-flex align-items-center me-3">
+                      <img src="./img/copa_ubicacion.jpg" alt="ubicacion" class="imagenUbicacion" />
+                      <a href="index.html"><span>Inicio</span></a>
+                  </li>
+                  <li class="navegadorPrincipal_li d-flex align-items-center me-3">
+                      <a href="./pages/cliente.html">Cliente</a>
+                  </li>
+                  <li class="navegadorPrincipal_li d-flex align-items-center me-3">
+                      <a href="./pages/haceTuPedido.html">Pedidos</a>
+                  </li>
+                  <li class="navegadorPrincipal_li d-flex align-items-center me-3">
+                      <a href="./pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="navegadorPrincipal_li d-flex align-items-center">
+                      <a href="./pages/contactanos.html">Contactanos</a>
+                  </li>
+              </ul>
+              <div class="container-Ayu_Usu_Car d-flex align-items-center">
+                  <a href="#ayuda" class="icon-link me-2">
+                      <i class="bi bi-question-circle"></i>
+                  </a>
+                  <a href="#usuario" class="icon-link me-2">
+                      <i class="bi bi-person"></i>
+                  </a>
+                  <a href="#carrito" class="icon-link">
+                      <i class="bi bi-cart"></i>
+                  </a>
+              </div>
+          </nav>
       </div>
-      <nav>
-        <ul class="navegadorPrincipal_ul">
-          <li class="navegadorPrincipal_li">
-            <img src="./img/copa_ubicacion.jpg" alt="ubicacion" class="imagenUbicacion" />
-            <a href="index.html"><span>Inicio</span></a>
-          </li>
-          <li class="navegadorPrincipal_li">
-            <a href="./pages/cliente.html">Cliente</a>
-          </li>
-          <li class="navegadorPrincipal_li">
-            <a href="./pages/haceTuPedido.html">Pedidos</a>
-          </li>
-          <li class="navegadorPrincipal_li">
-            <a href="./pages/nosotros.html">Nosotros</a>
-          </li>
-          <li class="navegadorPrincipal_li">
-            <a href="./pages/contactanos.html">Contactanos</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-   <main class="my-5">
-      <div class="text-center">
+  </header>
+  
+    <main class="my-5">
+      <div class="text-center mb-4">
         <h2 class="h2_Inicio">Vinoteca y Bar</h2>
         <p class="p_eslogan">
           <strong>"Donde cada copa cuenta una historia"</strong>
         </p>
       </div>
-      <div class="card mx-auto my-3 p-3" style="max-width: 600px;">
-        <div class="card-body">
-          <p class="p_bienvenido">
-            Bienvenido a <strong><span>Una </span> Copa Más</strong>, tu destino
-            perfecto para disfrutar de los mejores vinos y cervezas artesanales.
-            En nuestra vinoteca, no solo encontrarás una cuidada selección de
-            etiquetas de todo el mundo, sino también un ambiente acogedor donde
-            cada visita se convierte en una experiencia única.
-          </p>
-          <p class="p_bienvenido">
-            Disfruta de una copa de vino exquisito o una cerveza artesanal
-            mientras te relajas en nuestro bar, acompañado de buena música y
-            compañía. Ya sea que vengas a descubrir nuevos sabores o a pasar un
-            buen rato con amigos, en
-            <strong><span>Una </span> Copa Más</strong> siempre encontrarás el
-            maridaje perfecto para cada ocasión.
-          </p>
+      
+      <div class="container">
+        <div class="row">
+          <!-- Imagen destacada del bar -->
+          <div class="col-12 col-md-6 mb-4">
+            <img src="./img/bar-interior.jpg" alt="Bar Interior" class="img-fluid rounded" />
+          </div>
+    
+          <!-- Contenido principal -->
+          <div class="col-12 col-md-6 mb-4 d-flex align-items-center">
+            <div class="card mx-auto p-3">
+              <div class="card-body">
+                <p class="p_bienvenido">
+                  Bienvenido a <strong><span>Una </span> Copa Más</strong>, tu destino
+                  perfecto para disfrutar de los mejores vinos y cervezas artesanales.
+                  En nuestra vinoteca, no solo encontrarás una cuidada selección de
+                  etiquetas de todo el mundo, sino también un ambiente acogedor donde
+                  cada visita se convierte en una experiencia única.
+                </p>
+                <p class="p_bienvenido">
+                  Disfruta de una copa de vino exquisito o una cerveza artesanal
+                  mientras te relajas en nuestro bar, acompañado de buena música y
+                  compañía. Ya sea que vengas a descubrir nuevos sabores o a pasar un
+                  buen rato con amigos, en
+                  <strong><span>Una </span> Copa Más</strong> siempre encontrarás el
+                  maridaje perfecto para cada ocasión.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+    
     <footer class="py-4">
       <p class="text-center mb-3">
-        Vinoteca Una Copa Más - <em>Corrientes, Argentina</em>
+        Vinoteca <span>Una</span> Copa Más - <em>Corrientes, Argentina</em>
       </p>
       <div class="row">
         <div class="col-12 col-md-6 mb-3 mb-md-0 text-center text-md-left">

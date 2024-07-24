@@ -1,25 +1,52 @@
-.parrafoFooter {
-  text-align: center;
-}
+footer {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.navegadorFooter_ul,
-.navegadorFooter_li {
-  list-style: none;
+  .navegadorFooter {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-  display: flex;
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+    }
 
-  color: #ffffff;
+    li {
+      margin: 5px 10px;
+    }
 
-  padding: 1px 12px 2px;
-}
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
 
-.navegadorFooter_li {
-  border-left: 3px solid #ffffff;
-  img {
-    background: #ffffff;
-    border-radius: 3px;
-    padding: 1px;
-    width: 24px; /* Ajusta el tamaño del icono según sea necesario */
-    height: 24px; /* Ajusta el tamaño del icono según sea necesario */
+  .navegadorFooter_ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+// cambar el color del icono y su tamaño en responsive
+  .navegadorFooter_ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px; 
+    background-color: transparent; 
+  }
+
+  .navegadorFooter_ul li a img {
+    width: 24px; 
+    height: 24px; 
+    filter: invert(1); // buscoque la forma para invertir los colores... no se como encontre
   }
 }

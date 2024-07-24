@@ -2,12 +2,11 @@ header {
     display: flex;
     flex-flow: column;
 
-
     .container-Encabezado {
         display: flex;
         flex-direction: column;
-        align-items: flex-start; // Alineo los elementos al inicio del contenedor
-        gap: 0; // Elimino espacio entre los elementos
+        align-items: flex-start;
+        gap: 0;
     }
 
     .rubro {
@@ -29,29 +28,61 @@ header {
         h2 {
             font-size: 1.5rem;
             margin: 0;
-            padding-left: 40px; // Ajusto el valor para mover el h2 a la derecha
+            padding-left: 40px;
         }
     }
 
-    .navegadorPrincipal_ul {
+    nav {
+        // Asegúrate de que nav ocupe el 100% del contenedor
+        width: 100%;
+        // Flexbox para el nav
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // Ajusta el padding si es necesario
+        padding: 0 1rem;
 
-        .navegadorPrincipal_li {
+        .navegadorPrincipal_ul {
+            display: flex;
             list-style: none;
-            border-left: 3px solid #ffffff;
-            color: white;
-            padding: 1px 12px 2px;
+            margin: 0;
+            padding: 0;
 
-            .imagenUbicacion {
-                width: 30px;
-                height: 30px;
-                display: inline-block;
-                border-radius: 12px;
+            .navegadorPrincipal_li {
+                display: flex;
+                align-items: center;
+                margin-right: 1rem;
+
+                .imagenUbicacion {
+                    width: 30px;
+                    height: 30px;
+                    display: inline-block;
+                    border-radius: 12px;
+                    margin-right: 0.5rem;
+                }
+
+                a {
+                    color: #ffffff; // Ajusta el color según sea necesario
+                    text-decoration: none;
+
+                    span {
+                        color: $colorVino; // Ajusta el color según sea necesario
+                    }
+                }
             }
+        }
 
-            a {
-                span {
-                    color: $colorVino;
+        .container-Ayu_Usu_Car {
+            display: flex;
+            align-items: center;
+
+            .icon-link {
+                color: #ffffff; // Ajusta el color según sea necesario
+                margin-left: 0.5rem;
+                font-size: 1.25rem; // Ajusta el tamaño de iconos según sea necesario
+
+                &:hover {
+                    color: $colorVino; // Ajusta el color del hover según sea necesario
                 }
             }
         }

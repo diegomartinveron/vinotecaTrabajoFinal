@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+    .container-Encabezado {
+      text-align: center;
+    }
+  
+    .container-Encabezado .rubro,
+    .container-Encabezado .marca {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  // navegador 
+  @media (max-width: 767.98px) {
+    nav {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .container-Ayu_Usu_Car {
+        margin-top: 1rem; 
+        margin-left: 0; 
+    }
+  }
