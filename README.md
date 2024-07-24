@@ -60,7 +60,7 @@ Este proyecto lo realizo: Diego Martin Veròn
 
 ## Contacto
 
-Para cualquier consulta o comentario, puedes contactarnos a través de [Nuestro correo electrónico](mailto:diego.martin.veron@gmail.com).
+Para cualquier consulta o comentario, puedes contactarme a través de [Mi correo electrónico](mailto:diego.martin.veron@gmail.com)
 
 ---
 
