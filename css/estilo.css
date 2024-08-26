@@ -70,46 +70,92 @@ header .marca h2 {
   margin: 0;
   padding-left: 40px;
 }
-header .navegadorPrincipal_ul {
+header nav {
+  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
 }
-header .navegadorPrincipal_ul .navegadorPrincipal_li {
+header nav .navegadorPrincipal_ul {
+  display: flex;
   list-style: none;
-  border-left: 3px solid #ffffff;
-  color: white;
-  padding: 1px 12px 2px;
+  margin: 0;
+  padding: 0;
 }
-header .navegadorPrincipal_ul .navegadorPrincipal_li .imagenUbicacion {
+header nav .navegadorPrincipal_ul .navegadorPrincipal_li {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+header nav .navegadorPrincipal_ul .navegadorPrincipal_li .imagenUbicacion {
   width: 30px;
   height: 30px;
   display: inline-block;
   border-radius: 12px;
+  margin-right: 0.5rem;
 }
-header .navegadorPrincipal_ul .navegadorPrincipal_li a span {
+header nav .navegadorPrincipal_ul .navegadorPrincipal_li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+header nav .navegadorPrincipal_ul .navegadorPrincipal_li a span {
+  color: #722f37;
+}
+header nav .container-Ayu_Usu_Car {
+  display: flex;
+  align-items: center;
+}
+header nav .container-Ayu_Usu_Car .icon-link {
+  color: #ffffff;
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+}
+header nav .container-Ayu_Usu_Car .icon-link:hover {
   color: #722f37;
 }
 
-.parrafoFooter {
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .navegadorFooter ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  footer .navegadorFooter ul {
+    flex-direction: row;
+  }
+}
+footer .navegadorFooter li {
+  margin: 5px 10px;
+}
+footer .navegadorFooter a {
+  text-decoration: none;
+  color: inherit;
+}
+footer .navegadorFooter_ul {
+  padding: 0;
+  margin: 0;
+}
+footer .text-center {
   text-align: center;
 }
-
-.navegadorFooter_ul,
-.navegadorFooter_li {
-  list-style: none;
+footer .navegadorFooter_ul li a {
   display: flex;
-  color: #ffffff;
-  padding: 1px 12px 2px;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
 }
-
-.navegadorFooter_li {
-  border-left: 3px solid #ffffff;
-}
-.navegadorFooter_li img {
-  background: #ffffff;
-  border-radius: 3px;
-  padding: 1px;
-  width: 24px; /* Ajusta el tamaño del icono según sea necesario */
-  height: 24px; /* Ajusta el tamaño del icono según sea necesario */
+footer .navegadorFooter_ul li a img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
 }
 
 main {
@@ -258,4 +304,25 @@ img {
 }
 img:hover {
   transform: scale(1.1); /* Escala la imagen al 110% en hover */
+}
+
+@media (max-width: 768px) {
+  .container-Encabezado {
+    text-align: center;
+  }
+  .container-Encabezado .rubro,
+  .container-Encabezado .marca {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 767.98px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container-Ayu_Usu_Car {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=estilo.css.map */

@@ -1,136 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Venta vinos y lugar para el encuentro" />
-    <meta name="keywords" content="Precios de Vino BAJOS" />
-    <meta name="author" content="Verón, Martín" />
-    <meta property="og:title" content="Martín desarrllos" />
 
-    <link
-      rel="shortcut icon"
-      href="./img/copa_ubicacion.jpg"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./css/estilo.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Venta vinos y lugar para el encuentro" />
+  <meta name="keywords" content="Precios de Vino BAJOS" />
+  <meta name="author" content="Verón, Martín" />
+  <meta property="og:title" content="Martín desarrollos" />
 
-    <title>Vinoteca - Una Copa Más</title>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <div class="container-Encabezado">
-          <div class="rubro">
-            <h1>Vinoteca</h1>
+  <link rel="shortcut icon" href="./img/copa_ubicacion.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/estilo.css" />
+  <title>Vinoteca - Una Copa Más</title>
+</head>
+
+<body>
+  <div class="container">
+  <header>
+      <div class="container-Encabezado">
+          <div class="rubro text-center text-md-left">
+              <h1>Vinoteca</h1>
           </div>
-          <div class="marca">
-            <h2><span>Una</span> Copa Más</h2>
+          <div class="marca text-center text-md-right">
+              <h2><span>Una</span> Copa Más</h2>
           </div>
-        </div>
-        <nav>
-          <ul class="navegadorPrincipal_ul">
-            <li class="navegadorPrincipal_li">
-              <img
-                src="./img/copa_ubicacion.jpg"
-                alt="ubicacion"
-                class="imagenUbicacion"
-              />
-              <a href="index.html"><span>Inicio</span></a>
-            </li>
-            <li class="navegadorPrincipal_li">
-              <a href="./pages/cliente.html">Cliente</a>
-            </li>
-            <li class="navegadorPrincipal_li">
-              <a href="./pages/haceTuPedido.html">Pedidos</a>
-            </li>
-            <li class="navegadorPrincipal_li">
-              <a href="./pages/nosotros.html">Nosotros</a>
-            </li>
-            <li class="navegadorPrincipal_li">
-              <a href="./pages/contactanos.html">Contactanos</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main>
+          <nav class="d-flex align-items-center justify-content-between">
+              <ul class="navegadorPrincipal_ul d-flex list-unstyled mb-0">
+                  <li class="navegadorPrincipal_li d-flex align-items-center me-3">
+                      <img src="./img/copa_ubicacion.jpg" alt="ubicacion" class="imagenUbicacion" />
+                      <a href="index.html"><span>Inicio</span></a>
+                  </li>
+                  <li class="navegadorPrincipal_li d-flex align-items-center me-3">
+                      <a href="./pages/cliente.html">Cliente</a>
+                  </li>
+                  <li class="navegadorPrincipal_li d-flex align-items-center me-3">
+                      <a href="./pages/haceTuPedido.html">Pedidos</a>
+                  </li>
+                  <li class="navegadorPrincipal_li d-flex align-items-center me-3">
+                      <a href="./pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="navegadorPrincipal_li d-flex align-items-center">
+                      <a href="./pages/contactanos.html">Contactanos</a>
+                  </li>
+              </ul>
+              <div class="container-Ayu_Usu_Car d-flex align-items-center">
+                  <a href="#ayuda" class="icon-link me-2">
+                      <i class="bi bi-question-circle"></i>
+                  </a>
+                  <a href="#usuario" class="icon-link me-2">
+                      <i class="bi bi-person"></i>
+                  </a>
+                  <a href="#carrito" class="icon-link">
+                      <i class="bi bi-cart"></i>
+                  </a>
+              </div>
+          </nav>
+      </div>
+  </header>
+  
+    <main class="my-5">
+      <div class="text-center mb-4">
         <h2 class="h2_Inicio">Vinoteca y Bar</h2>
         <p class="p_eslogan">
           <strong>"Donde cada copa cuenta una historia"</strong>
         </p>
-        <p class="p_bienvenido">
-          Bienvenido a <strong><span>Una </span> Copa Más</strong>, tu destino
-          perfecto para disfrutar de los mejores vinos y cervezas artesanales.
-          En nuestra vinoteca, no solo encontrarás una cuidada selección de
-          etiquetas de todo el mundo, sino también un ambiente acogedor donde
-          cada visita se convierte en una experiencia única.
-        </p>
-        <p class="p_bienvenido">
-          Disfruta de una copa de vino exquisito o una cerveza artesanal
-          mientras te relajas en nuestro bar, acompañado de buena música y
-          compañía. Ya sea que vengas a descubrir nuevos sabores o a pasar un
-          buen rato con amigos, en
-          <strong><span>Una </span> Copa Más</strong> siempre encontrarás el
-          maridaje perfecto para cada ocasión.
-        </p>
-      </main>
-      <footer class="py-4">
-        <p class="text-center mb-3">
-          Vinoteca Una Copa Más - <em>Corrientes, Argentina</em>
-        </p>
+      </div>
+      
+      <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6 mb-3 mb-md-0 text-center text-md-left">
-            <nav class="navegadorFooter">
-              <ul class="list-unstyled navegadorFooter_ul">
-                <li class="mb-2 navegadorFooter_li">
-                  <a href="./index.html"><span>Inicio</span></a>
-                </li>
-                <li class="mb-2 navegadorFooter_li">
-                  <a href="./pages/cliente.html">Cliente</a>
-                </li>
-                <li class="mb-2 navegadorFooter_li">
-                  <a href="./pages/haceTuPedido.html">Pedidos</a>
-                </li>
-                <li class="mb-2 navegadorFooter_li">
-                  <a href="./pages/nosotros.html">Nosotros</a>
-                </li>
-                <li class="mb-2 navegadorFooter_li">
-                  <a href="./pages/contactanos.html">Contactanos</a>
-                </li>
-              </ul>
-            </nav>
+          <!-- Imagen destacada del bar -->
+          <div class="col-12 col-md-6 mb-4">
+            <img src="./img/bar-interior.jpg" alt="Bar Interior" class="img-fluid rounded" />
           </div>
-          <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
-            <ul
-              class="navegadorFooter_ul list-unstyled d-flex justify-content-center align-items-center"
-            >
-              <li class="navegadorFooter_li mx-2">
-                <a href="https://Instagram.com" target="_blank">
-                  <img src="./img/redes_instagram.svg" alt="" />
-                </a>
-              </li>
-              <li class="navegadorFooter_li mx-2">
-                <a href="https://x.com" target="_blank">
-                  <img src="./img/redes_twitter-x.svg" alt="" />
-                </a>
-              </li>
-              <li class="navegadorFooter_li mx-2">
-                <a href="https://Facebook.com" target="_blank">
-                  <img src="./img/redes_facebook.svg" alt="" />
-                </a>
-              </li>
-              <li class="navegadorFooter_li mx-2">
-                <a href="https://youtube.com">
-                  <img src="./img/redes_youtube.svg" alt="" />
-                </a>
-              </li>
-            </ul>
+    
+          <!-- Contenido principal -->
+          <div class="col-12 col-md-6 mb-4 d-flex align-items-center">
+            <div class="card mx-auto p-3">
+              <div class="card-body">
+                <p class="p_bienvenido">
+                  Bienvenido a <strong><span>Una </span> Copa Más</strong>, tu destino
+                  perfecto para disfrutar de los mejores vinos y cervezas artesanales.
+                  En nuestra vinoteca, no solo encontrarás una cuidada selección de
+                  etiquetas de todo el mundo, sino también un ambiente acogedor donde
+                  cada visita se convierte en una experiencia única.
+                </p>
+                <p class="p_bienvenido">
+                  Disfruta de una copa de vino exquisito o una cerveza artesanal
+                  mientras te relajas en nuestro bar, acompañado de buena música y
+                  compañía. Ya sea que vengas a descubrir nuevos sabores o a pasar un
+                  buen rato con amigos, en
+                  <strong><span>Una </span> Copa Más</strong> siempre encontrarás el
+                  maridaje perfecto para cada ocasión.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+<<<<<<< HEAD
       </footer>
       <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
       <!-- Aquí puedes incluir otros scripts JavaScript adicionales -->
@@ -138,3 +106,63 @@
     </div>
   </body>
 </html>
+=======
+      </div>
+    </main>
+    
+    <footer class="py-4">
+      <p class="text-center mb-3">
+        Vinoteca <span>Una</span> Copa Más - <em>Corrientes, Argentina</em>
+      </p>
+      <div class="row">
+        <div class="col-12 col-md-6 mb-3 mb-md-0 text-center text-md-left">
+          <nav class="navegadorFooter">
+            <ul class="list-unstyled navegadorFooter_ul">
+              <li class="mb-2 navegadorFooter_li">
+                <a href="./index.html"><span>Inicio</span></a>
+              </li>
+              <li class="mb-2 navegadorFooter_li">
+                <a href="./pages/cliente.html">Cliente</a>
+              </li>
+              <li class="mb-2 navegadorFooter_li">
+                <a href="./pages/haceTuPedido.html">Pedidos</a>
+              </li>
+              <li class="mb-2 navegadorFooter_li">
+                <a href="./pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="mb-2 navegadorFooter_li">
+                <a href="./pages/contactanos.html">Contactanos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
+          <ul class="navegadorFooter_ul list-unstyled d-flex justify-content-center align-items-center">
+            <li class="navegadorFooter_li mx-2">
+              <a href="https://Instagram.com" target="_blank">
+                <img src="./img/redes_instagram.svg" alt="Instagram" />
+              </a>
+            </li>
+            <li class="navegadorFooter_li mx-2">
+              <a href="https://x.com" target="_blank">
+                <img src="./img/redes_twitter-x.svg" alt="Twitter" />
+              </a>
+            </li>
+            <li class="navegadorFooter_li mx-2">
+              <a href="https://Facebook.com" target="_blank">
+                <img src="./img/redes_facebook.svg" alt="Facebook" />
+              </a>
+            </li>
+            <li class="navegadorFooter_li mx-2">
+              <a href="https://youtube.com" target="_blank">
+                <img src="./img/redes_youtube.svg" alt="YouTube" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </div>
+</body>
+>>>>>>> 43a0b524907429f7a46cd278eeec2bd2e66ff49c
