@@ -1,6 +1,12 @@
+// crre este js para ir acomodando mis ideas se que no es lo aconsejable pero para ir comenzando
+
+// creao las variables para comenzar a utilizar en mi totalCarrito. lo que hace es sumar y multiplicar 
+
 let totalCarrito = 0;
 let cantidadVinos = 0;
 
+
+// utilizo el bonton de carrito
 document.querySelectorAll('.btn-carrito').forEach((btn, index) => {
     btn.addEventListener('click', () => {
         const cantidad = parseInt(document.querySelectorAll('.quantity-control input')[index].value);
@@ -21,6 +27,6 @@ document.getElementById('borrarCarrito').addEventListener('click', () => {
     document.getElementById('totalCarrito').textContent = totalCarrito.toFixed(2);
     document.getElementById('cantidadVinos').textContent = cantidadVinos;
 
-    // Si tienes una función para actualizar visualmente el carrito, llámala aquí
+   
     alert("El carrito ha sido vaciado.");
 });
