@@ -61,82 +61,55 @@
           </nav>
       </div>
   </header>
-    <main class="container  my-5">
-      <h2 class="text-center">Nuestro Productos</h2>
-      <!-- slider con bootstrap -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+  <div class="row my-5">
+    <h3 class="text-center mb-4">Vinos Destacados</h3>
+    
+    <div class="col-12 col-md-4 mb-4">
+      <div class="product-card">
+        <img src="../img/venta01_Saint-Felicien-CS-2015-vendimia.jpg" class="product-image card-img-top" alt="Saint Felicien" />
+        <div class="product-name">Saint Felicien</div>
+        <div class="product-price">$45.970</div>
+        <div class="quantity-control">
+          <input type="number" id="cantidadVino1" value="1" min="1" />
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../img/ventavino1.jpg" class="d-block w-100" alt="HIANTI DOCG 2012 - Scuderia Italia">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/ventavino2.jpg" class="d-block w-100" alt="Toscana - Italia Tinto tranquilo">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/ventavino3.jpg" class="d-block w-100" alt="Selta Silk">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Atras</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Adelante</span>
-        </button>
+        <button class="btn-carrito" data-vino="Saint Felicien" data-precio="45970">Agregar al carrito</button>
       </div>
-      <!-- fin slider con bootstrap -->
-      <br>
-      <div class="row my-5">
-        <h3 class="text-center mb-4">Vinos Destacados</h3>
-        <div class="col-12 col-md-4 mb-4">
-          <div class="product-card">
-            <img src="../img/venta01_Saint-Felicien-CS-2015-vendimia.jpg" class="product-image card-img-top"
-              alt="Saint Felicien" />
-            <div class="product-name">Saint Felicien</div>
-            <div class="product-price">$45.970</div>
-            <div class="quantity-control">
-              <input type="number" value="1" min="1" />
-            </div>
-            <button class="btn-carrito">Agregar al carrito</button>
-          </div>
+    </div>
+  
+    <div class="col-12 col-md-4 mb-4">
+      <div class="product-card">
+        <img src="../img/venta02_Saint-Felicien-CS-2015-vendimia.jpg" class="product-image card-img-top" alt="Saint Felicien" />
+        <div class="product-name">Saint Felicien</div>
+        <div class="product-price">$45.970</div>
+        <div class="quantity-control">
+          <input type="number" id="cantidadVino2" value="1" min="1" />
         </div>
-        <div class="col-12 col-md-4 mb-4">
-          <div class="product-card">
-            <img src="../img/venta02_Saint-Felicien-CS-2015-vendimia.jpg" class="product-image card-img-top"
-              alt="Saint Felicien" />
-            <div class="product-name">Saint Felicien</div>
-            <div class="product-price">$45.970</div>
-            <div class="quantity-control">
-              <input type="number" value="1" min="1" />
-            </div>
-            <button class="btn-carrito">Agregar al carrito</button>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 mb-4">
-          <div class="product-card">
-            <img src="../img/venta03_Saint-Felicien-CS-2015-vendimia.jpg" class="product-image card-img-top"
-              alt="Saint Felicien" />
-            <div class="product-name">Saint Felicien</div>
-            <div class="product-price">$45.970</div>
-            <div class="quantity-control">
-              <input type="number" value="1" min="1" />
-            </div>
-            <button class="btn-carrito">Agregar al carrito</button>
-          </div>
-        </div>
+        <button class="btn-carrito" data-vino="Saint Felicien" data-precio="45970">Agregar al carrito</button>
       </div>
-    </main>
+    </div>
+  
+    <div class="col-12 col-md-4 mb-4">
+      <div class="product-card">
+        <img src="../img/venta03_Saint-Felicien-CS-2015-vendimia.jpg" class="product-image card-img-top" alt="Saint Felicien" />
+        <div class="product-name">Saint Felicien</div>
+        <div class="product-price">$45.970</div>
+        <div class="quantity-control">
+          <input type="number" id="cantidadVino3" value="1" min="1" />
+        </div>
+        <button class="btn-carrito" data-vino="Saint Felicien" data-precio="45970">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+  
+  <div id="carritoTotal" class="text-end mt-4">
+    <h5 class="carrito-detalles">Mi Carrito: 
+        <span id="cantidadVinos">0</span> Vino(s) - Total: $<span id="totalCarrito">0</span>
+    </h5>
+    <button id="borrarCarrito" class="btn btn-borrar mt-3">Borrar Carrito</button>
+</div>
+
+
+  
     <footer class="py-4">
       <p class="text-center mb-3">
         Vinoteca Una Copa Más - <em>Corrientes, Argentina</em>
@@ -189,6 +162,7 @@
         </div>
       </div>
     </footer>
+    <script src="../js/js.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
   </div>

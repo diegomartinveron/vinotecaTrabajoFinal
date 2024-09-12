@@ -326,3 +326,24 @@ img:hover {
     margin-left: 0;
   }
 }/*# sourceMappingURL=estilo.css.map */
+
+#borrarCarrito {
+  background-color: #e74c3c; /* Color vino */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#borrarCarrito:hover {
+  background-color: #c0392b; /* Oscurecer en hover */
+  transform: scale(1.05); /* Agrandar un poco al pasar el mouse */
+}
+
+#borrarCarrito:active {
+  background-color: #a93226; /* Fondo más oscuro al hacer clic */
+  transform: scale(0.95); /* Reducir tamaño en clic */
+}
