@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,58 +7,55 @@
   <meta name="keywords" content="Precios de Vino BAJOS" />
   <meta name="author" content="Verón, Martín" />
   <meta property="og:title" content="Martín desarrollos" />
-
-  <link rel="shortcut icon" href="./img/copa_ubicacion.jpg" type="image/x-icon" />
-  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="./css/estilo.css" />
+  <link rel="shortcut icon" href="img/copa_ubicacion.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/estilo.css" />
   <title>Vinoteca - Una Copa Más</title>
 </head>
-
 <body>
   <div class="container">
-  <header>
+    <header>
       <div class="container-Encabezado">
-          <div class="rubro text-center text-md-left">
-              <h1>Vinoteca</h1>
+        <div class="rubro text-center text-md-left">
+          <h1>Vinoteca</h1>
+        </div>
+        <div class="marca text-center text-md-right">
+          <h2><span>Una</span> Copa Más</h2>
+        </div>
+        <nav class="d-flex align-items-center justify-content-between">
+          <ul class="navegadorPrincipal_ul d-flex list-unstyled mb-0">
+            <li class="navegadorPrincipal_li d-flex align-items-center me-3">
+              <img src="./img/copa_ubicacion.jpg" alt="ubicacion" class="imagenUbicacion" />
+              <a href="index.html"><span>Inicio</span></a>
+            </li>
+            <li class="navegadorPrincipal_li d-flex align-items-center me-3">
+              <a href="./pages/cliente.html">Cliente</a>
+            </li>
+            <li class="navegadorPrincipal_li d-flex align-items-center me-3">
+              <a href="./pages/haceTuPedido.html">Pedidos</a>
+            </li>
+            <li class="navegadorPrincipal_li d-flex align-items-center me-3">
+              <a href="./pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="navegadorPrincipal_li d-flex align-items-center">
+              <a href="./pages/contactanos.html">Contactanos</a>
+            </li>
+          </ul>
+          <div class="container-Ayu_Usu_Car d-flex align-items-center">
+            <a href="#ayuda" class="icon-link me-2">
+              <i class="bi bi-question-circle"></i>
+            </a>
+            <a href="#usuario" class="icon-link me-2">
+              <i class="bi bi-person"></i>
+            </a>
+            <a href="#carrito" class="icon-link">
+              <i class="bi bi-cart"></i>
+            </a>
           </div>
-          <div class="marca text-center text-md-right">
-              <h2><span>Una</span> Copa Más</h2>
-          </div>
-          <nav class="d-flex align-items-center justify-content-between">
-              <ul class="navegadorPrincipal_ul d-flex list-unstyled mb-0">
-                  <li class="navegadorPrincipal_li d-flex align-items-center me-3">
-                      <img src="./img/copa_ubicacion.jpg" alt="ubicacion" class="imagenUbicacion" />
-                      <a href="index.html"><span>Inicio</span></a>
-                  </li>
-                  <li class="navegadorPrincipal_li d-flex align-items-center me-3">
-                      <a href="./pages/cliente.html">Cliente</a>
-                  </li>
-                  <li class="navegadorPrincipal_li d-flex align-items-center me-3">
-                      <a href="./pages/haceTuPedido.html">Pedidos</a>
-                  </li>
-                  <li class="navegadorPrincipal_li d-flex align-items-center me-3">
-                      <a href="./pages/nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="navegadorPrincipal_li d-flex align-items-center">
-                      <a href="./pages/contactanos.html">Contactanos</a>
-                  </li>
-              </ul>
-              <div class="container-Ayu_Usu_Car d-flex align-items-center">
-                  <a href="#ayuda" class="icon-link me-2">
-                      <i class="bi bi-question-circle"></i>
-                  </a>
-                  <a href="#usuario" class="icon-link me-2">
-                      <i class="bi bi-person"></i>
-                  </a>
-                  <a href="#carrito" class="icon-link">
-                      <i class="bi bi-cart"></i>
-                  </a>
-              </div>
-          </nav>
+        </nav>
       </div>
-  </header>
-  
+    </header>
     <main class="my-5">
       <div class="text-center mb-4">
         <h2 class="h2_Inicio">Vinoteca y Bar</h2>
@@ -67,14 +63,12 @@
           <strong>"Donde cada copa cuenta una historia"</strong>
         </p>
       </div>
-      
       <div class="container">
         <div class="row">
           <!-- Imagen destacada del bar -->
           <div class="col-12 col-md-6 mb-4">
             <img src="./img/bar-interior.jpg" alt="Bar Interior" class="img-fluid rounded" />
           </div>
-    
           <!-- Contenido principal -->
           <div class="col-12 col-md-6 mb-4 d-flex align-items-center">
             <div class="card mx-auto p-3">
@@ -98,9 +92,11 @@
             </div>
           </div>
         </div>
-      </div>
+        </footer>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- Aquí puedes incluir otros scripts JavaScript adicionales -->
+        <script src="./js/jsUnaCopa.js"></script>
     </main>
-    
     <footer class="py-4">
       <p class="text-center mb-3">
         Vinoteca <span>Una</span> Copa Más - <em>Corrientes, Argentina</em>
@@ -154,5 +150,5 @@
       </div>
     </footer>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  </div>
+    <script src="js/jsUnaCopa.js"></script>
 </body>
